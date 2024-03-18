@@ -34,10 +34,14 @@
       <hr />
       <div class="box3-tasks">
         {% for task in all_db_tasks %}
-        <div class="ui-tasks">{{task["task"]}}</div> <button class="delete-btn">Delete</button>
+        <div class="ui-tasks">
+          <span>{{task["task"]}}</span>
+        </div>
+        <a href="{{url_for('delete_task', id = task['id'])}}" class="delete-btn"
+          >Delete</a
+        >
         {% endfor%}
       </div>
-
     </div>
   </body>
 </html>
