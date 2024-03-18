@@ -1,8 +1,9 @@
 # Yet Another Generic Todo App
 
 The *YAG* Todo app is a simple implementation of a todo app made using the Flask Library and a SQLite database.
+![Picture of the YAG-todo app with some tasks](media/yag-todo-app.png)
 
-## Challenge
+## The Challenge
 
 This project is for an assignment from the SYSC3010 (Computer Systems Development Project) course at Carleton University, wherein students can write/record a tutorial not covered in labs or lectures.
 
@@ -10,7 +11,7 @@ I'm hoping I can give a concise overview on how to get started building applicat
 
 ## Tutorial
 
-Feel free to scan through the markdown tutorial [here](), or download the [pdf version]().
+Feel free to read through the markdown tutorial [here](Building_YAG-todo.md).
 
 ## Tools & Technologies
 
