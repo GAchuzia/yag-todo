@@ -23,6 +23,14 @@ def add_task():
 
     return render_template("index.html")
 
+@app.route("/delete_task/<int:id>", methods=["POST", "GET"])
+def delete_task(id):
+    if request.method == "GET":
+        db = get_db()
+        db.execute("delete from todolist where id = ?", [id])
+        db.commit()
+        return redirect(url_for("index"))
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
