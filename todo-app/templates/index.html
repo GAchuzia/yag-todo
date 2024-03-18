@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="static/index.css" />
     <title>YAG-Todo</title>
   </head>
+
   <body>
     <div class="box1">
       <header>
@@ -16,7 +17,7 @@
     <div class="box2">
       <form action="/add_task" method="POST">
         <div class="form1">
-          <label for="taskfield" class="form1-label">Enter your task</label>
+          <label for="taskfield" class="form1-label">Enter a task</label>
           <input
             type="text"
             class="form1-input"
@@ -26,6 +27,17 @@
           <button type="submit" class="submit-btn">Submit</button>
         </div>
       </form>
+    </div>
+
+    <div class="box3">
+      <p class="box3-title">My Task List</p>
+      <hr />
+      <div class="box3-tasks">
+        {% for task in all_db_tasks %}
+        <div class="ui-tasks">{{task["task"]}}</div> <button class="delete-btn">Delete</button>
+        {% endfor%}
+      </div>
+
     </div>
   </body>
 </html>

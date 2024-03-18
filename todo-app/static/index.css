@@ -3,8 +3,11 @@
   font-family: sans-serif;
 }
 
+body {
+  background-color: #c5ebaa;
+}
 .box1 {
-  background-color: #a5dd9b;
+  background-color: #f6f193;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -27,6 +30,10 @@
   justify-content: baseline;
   margin-bottom: 0.5em;
   width: 100%;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 0.5em;
+  background-color: #f6f193;
 }
 
 .form1-label {
@@ -39,7 +46,7 @@
   padding: 1em;
   border-radius: 5px;
   border: 2px solid;
-  width: calc(100vw - 1.5em);
+  width: calc(100vw - 4em);
   font-size: 1.3em;
   margin-bottom: 0.1em;
 }
@@ -49,8 +56,58 @@
   border-radius: 5px;
   border: 2px solid;
   font-size: 1.5em;
+  width: calc(100vw - 3.5em);
 }
 
 .submit-btn:hover {
   cursor: pointer;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  margin: 1em;
+  box-sizing: border-box;
+  padding: 1em;
+  background-color: #f6f193;
+  border: 2px solid;
+  border-radius: 5px;
+  width: calc(100vw - 2.5em);
+}
+
+.box3-title {
+  font-size: 1.5em;
+}
+
+.ui-tasks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.1em;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 0.5em;
+  background-color: #a5dd9b;
+  width: calc(100vw - 5.9em);
+}
+
+hr {
+  margin-bottom: 0.5em;
+}
+
+.delete-btn {
+  background-color: #e28080;
+  padding: 0.1em;
+  border-radius: 5px;
+  border: 2px solid #000;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  width: calc(100vw - 3.9em);
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+  color: #f6f193;
 }
