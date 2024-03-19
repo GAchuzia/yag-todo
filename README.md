@@ -7,11 +7,11 @@ A simple implementation of a todo app made using the Flask Library and a SQLite 
 
 An assignment from the Computer Systems Development Project (SYSC3010) course at Carleton University, wherein students can make a tutorial on a topic not covered in lectures/labs.
 
-I (try to) give a quick introduction to Flask and SQLite by building a todoapp, two technologies fairly new to me.
+I (try to) give a quick introduction to Flask and SQLite by building a todoapp, using these technologies that are fairly new to me.
 
 ## Tutorial
 
-Read the markdown tutorial [here!](Building_YAG-todo.md)
+Read the markdown tutorial [here!](Todo-memo.md)
 
 ## Tools & Technologies
 
