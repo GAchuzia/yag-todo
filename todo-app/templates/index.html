@@ -10,40 +10,40 @@
   <body>
     <div class="box1">
       <header>
-        <div class="logo-title">
-          <p>Yet Another Generic</p>
-        </div>
-        <p class="app-name">Todo App</p>
+        <div><p>Todo App</p></div>
       </header>
     </div>
 
     <div class="box2">
       <form action="/add_task" method="POST">
         <div class="form1">
-          <label for="taskfield" class="form1-label">Enter a task</label>
           <input
             type="text"
             class="form1-input"
             id="taskfield"
             name="user_task"
+            placeholder="Today I'd like to..."
           />
-          <button type="submit" class="submit-btn">Submit</button>
+          <button type="submit" class="add-btn">Add</button>
         </div>
       </form>
     </div>
 
     <div class="box3">
-      <p class="box3-title">My Task List</p>
-      <hr />
-      <div class="box3-tasks">
-        {% for task in all_db_tasks %}
-        <div class="ui-tasks">
-          <span>{{task["task"]}}</span>
-        </div>
-        <a href="{{url_for('delete_task', id = task['id'])}}" class="delete-btn"
-          >Delete</a
-        >
-        {% endfor%}
+      {% for task in all_db_tasks %}
+      <div class="app-tasks">
+        <span
+          >{{task["task"]}}
+          <a
+            href="{{url_for('delete_task', id = task['id'])}}"
+            class="delete-btn"
+          >
+            <img src="static/assets/trash-icon.svg" />
+          </a>
+          
+        </span><hr/>
+
+        {% endfor %}
       </div>
     </div>
   </body>
