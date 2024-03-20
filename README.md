@@ -1,7 +1,6 @@
 # Yet Another Generic Todo App
 
-![YAG-Todo in action](media\yag-todo-in-action.gif)
- 
+![YAG-Todo in action](media/yag-todo-in-action.gif)  
 A simple implementation of a todo app made using the Flask Library and a SQLite database.
 
 ## The Challenge
