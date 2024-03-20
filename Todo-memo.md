@@ -1,16 +1,20 @@
-# Learning Flask and SQLite by Building a Todo App
+# (DRAFT) Learning Flask and SQLite by Building a Todo App
+
+Author: Grant Achuzia (101222695)  
+Course: SYSC3010 - Computer Systems Development Project
 
 ## Table Of Contents
 
 1. [Introduction](#introduction)
 2. [Prerequisites](#prerequisites)
 3. [Setting Up Your Environment](#setting-up-your-environment)
-4. [Creating the Flask Application](#creating-the-flask-application)
+4. [Creating the Flask Application](#creating-the-flask-application)  
+    4.1 [Routes](#routes)  
+    4.2 [UI Connectivity](#ui-connectivity)
 5. [Creating the SQLite Database](#creating-the-sqlite-database)
-7. [Creating Templates](#creating-the-templates)
-8. [Testing the App](#testing-the-app)
-9. [Conclusion](#conclusion)
-10. [Resources](#resources)
+6. [Testing the App](#testing-the-app)
+7. [Conclusion](#conclusion)
+8. [Resources](#resources)
 
 ### Introduction
 
@@ -18,7 +22,7 @@ Throughout this tutorial, we will learn the basics of the Python Flask framework
 
 Check out the github repository for the todo app [here!](https://github.com/GAchuzia/yag-todo)
 
-### Prequisites
+### Prerequisites
 
 I'm going to assume you are familiar and comfortable programming in Python, SQL, HTML and CSS. The main goal of this project is to learn new tools (Flask and SQLite) with pre-established programming fundamentals.
 
@@ -77,14 +81,16 @@ def index():
     return render_template("index.html", all_db_tasks = all_db_tasks)
 ```
 
+#### UI Connectivity
+
 ### Creating the SQLite Database
 
 ### Testing the App
-
 
 ### Conclusion
 
 ### Resources
 
 [Project Github repo: GAchuzia/yag-todo](https://github.com/GAchuzia/yag-todo)  
-[Flask Docs: Qiuckstart](https://flask.palletsprojects.com/en/3.0.x/quickstart/)
+[Flask Docs: Quickstart](https://flask.palletsprojects.com/en/3.0.x/quickstart/)  
+[MDN Web Docs](https://developer.mozilla.org/en-US/)
